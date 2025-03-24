@@ -14,7 +14,7 @@ Input User Login Credentials
 
 Submit Login Form
     Click Button    id=login
-	Wait Until Page Contains Element    id=Cadastros
+	Wait Until Page Contains Element    ${SIDEBAR_MENU}
     Page Should Contain Element    ${BUTTON_LOGOUT}
 
 Perform Logout
