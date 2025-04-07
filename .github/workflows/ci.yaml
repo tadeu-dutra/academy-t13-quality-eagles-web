@@ -25,7 +25,7 @@ jobs:
 
       - name: Run Robot Tests
         run: |
-          robot tests/e2e.robot --outputdir results/ .
+          robot ./tests/e2e.robot --outputdir results/ .
 
       - name: Test Report
         uses: actions/upload-artifact@v4
