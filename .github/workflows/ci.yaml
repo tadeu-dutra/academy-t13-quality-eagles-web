@@ -4,7 +4,7 @@ on: [push, workflow_dispatch]
 
 jobs:
   test:
-    name: Front Tests Robot
+    name: Run Tests
     runs-on: ubuntu-24.04
 
     steps:
@@ -27,7 +27,7 @@ jobs:
         run: |
           mkdir -p results/
         
-      - name: Run Robot Tests
+      - name: Run Tests
         run: |
           robot --outputdir results/ tests/
 
@@ -39,7 +39,7 @@ jobs:
           path: results
 
   deploy:
-    name: Deploy GitHub Pages
+    name: Deploy to GitHub Pages
     runs-on: ubuntu-24.04
     if: always()
     needs:
