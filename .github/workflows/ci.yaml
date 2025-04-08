@@ -23,9 +23,13 @@ jobs:
           pip install --upgrade robotframework-seleniumlibrary
           pip install pyyaml
 
+      - name: Create Results Directory
+        run: |
+          mkdir -p results/
+        
       - name: Run Robot Tests
         run: |
-          robot tests/ --outputdir results/ .
+          robot tests/ --outputdir results/
 
       - name: Test Report
         uses: actions/upload-artifact@v4
