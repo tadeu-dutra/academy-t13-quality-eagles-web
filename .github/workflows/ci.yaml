@@ -19,13 +19,13 @@ jobs:
       - name: Install dependencies
         run: |
           pip install robotframework
-          pip install --upgrade robotframework-seleniumlibrary
           pip install Faker
+          pip install --upgrade robotframework-seleniumlibrary
           pip install pyyaml
 
       - name: Run Robot Tests
         run: |
-          robot ./tests/e2e.robot --outputdir results/ .
+          robot tests/ --outputdir results/ .
 
       - name: Test Report
         uses: actions/upload-artifact@v4
