@@ -21,4 +21,5 @@ Validate Sidebar Menu Links
 	${value}    Get From Dictionary    ${ENTITIES_DICT}    ${key}
 	Log To Console    3. Value To Be Checked -> ${current_url} Should Contain ${value}
 	Should Contain    ${current_url}    ${value}
+	Sleep    1s
     END

@@ -9,16 +9,19 @@ Successful Login and Logout Test
 	Submit Login Form
 	Perform Logout
 
+	[Teardown]    Close Browser
+
 Invalid Email Login Test
 	Open Browser to QA Coders Website
 	Input User Login Credentials    ${INVALID_USERNAME}    ${INVALID_PASSWORD}
 	Validate Invalid Email Error Message
+
+	[Teardown]    Close Browser
     
-Multiple Sidebar Menu Options Test
+Sidebar Menu Options Test
 	Open Browser to QA Coders Website
 	Input User Login Credentials    ${VALID_USERNAME}    ${VALID_PASSWORD}
 	Submit Login Form
     Validate Sidebar Menu Links
 
-	[Teardown]	Close All Browsers
-
+	[Teardown]    Close Browser
