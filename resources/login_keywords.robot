@@ -3,7 +3,7 @@ Resource    ../resources/config.robot
 
 *** Keywords ***
 Open Browser to QA Coders Website
-	Open Browser	${BASE_URL}    ${BROWSER}
+	Open Browser	${BASE_URL}    ${BROWSER}    options=add_argument("--headless")
 	Maximize Browser Window
 	${current_url}    Get Location
 	Should Contain    ${current_url}    /login
