@@ -19,9 +19,7 @@ jobs:
       - name: Install dependencies
         run: |
           pip install robotframework
-          pip install Faker
           pip install --upgrade robotframework-seleniumlibrary
-          pip install pyyaml
 
       - name: Create Results Directory
         run: |
