@@ -1,4 +1,4 @@
-name: Robot Web Pipeline
+name: Web Testing
 
 on: [push, workflow_dispatch]
 
