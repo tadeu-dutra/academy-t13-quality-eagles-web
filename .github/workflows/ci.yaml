@@ -1,4 +1,4 @@
-name: Robot Framework Front Tests
+name: Robot Web Pipeline
 
 on: [push, workflow_dispatch]
 
