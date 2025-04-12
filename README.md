@@ -1,6 +1,6 @@
-# academy-t13-quality-eagles-web
+# quality-eagles-academy13-front-robot
 
-This repository tracks the work done by the Quality Eagles squad during the TQC (Academy) program offered by QA Coders. It explores Web Automation Testing using Robot Framework.
+This repository tracks the work done by the Quality Eagles squad during the TQC (Academy) program offered by QA Coders. It explores Robot Framework with SeleniumLibrary for web automation and has a CI pipeline set up using GitHub Actions (.github/workflows/ci.yaml).
 
 ## Prerequisites
 
@@ -28,8 +28,24 @@ Another library you will need is the [Faker library](https://pypi.org/project/Fa
 
     pip install Faker
 
-For web testing we wil be using [SeleniumLibrary](https://robotframework.org/SeleniumLibrary/) for Robot Framework, it utilizes the Selenium tool internally. The recommended installation method is using pip:
+Now let's have installed the [SeleniumLibrary](https://robotframework.org/SeleniumLibrary/) for Robot Framework, it utilizes the Selenium tool internally. The recommended installation method is using pip:
 
     pip install --upgrade robotframework-seleniumlibrary
 
+## CI Pipeline
 
+The project uses GitHub Actions for continuous integration. The pipeline is triggered on push events and workflow dispatches. The pipeline consists of the following jobs:
+
+* `test`: runs the tests using Robot Framework
+
+## Running Tests
+
+To run the tests, execute the following command:
+
+    robot --outputdir results/ tests/
+
+## Documentation
+
+* [Robot Framework documentation](https://robotframework.org/)
+* [SeleniumLibrary documentation](https://robotframework.org/SeleniumLibrary/)
+* [GitHub Actions documentation](https://docs.github.com/en/actions)
