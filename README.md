@@ -1,6 +1,6 @@
 # quality-eagles-academy13-front-robot
 
-This repository tracks the work done by the Quality Eagles squad during the TQC (Academy) program offered by QA Coders. It explores Robot Framework with SeleniumLibrary for web automation and has a CI pipeline set up using GitHub Actions (.github/workflows/ci.yaml).
+This repository tracks the work done by the Quality Eagles squad during the TQC (Academy) program offered by QA Coders. It explores Robot Framework with SeleniumLibrary for web automation and has a CI pipeline set up using [GitHub Actions](.github/workflows/ci.yaml).
 
 ## Prerequisites
 
