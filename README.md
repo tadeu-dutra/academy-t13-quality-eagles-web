@@ -32,6 +32,10 @@ Now let's have installed the [SeleniumLibrary](https://robotframework.org/Seleni
 
     pip install --upgrade robotframework-seleniumlibrary
 
+Instead of installing libraries one by one as described above you can simply run the following command to install the dependencies listed in the requirements.txt file.
+
+    pip install -r requirements.txt
+
 ## CI Pipeline
 
 The project uses GitHub Actions for continuous integration. The pipeline is triggered on push events and workflow dispatches. The pipeline consists of the following jobs:
